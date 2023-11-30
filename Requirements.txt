@@ -1,0 +1,3 @@
+#Python Module to install
+
+pip install pystac-client

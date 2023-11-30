@@ -1,0 +1,284 @@
+<RasterType xsi:type='typens:RasterType' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/2.7.0'>
+	<Names xsi:type='typens:ArrayOfString'>
+		<String>RasterBuilder</String>
+		<String>ItemTemplates</String>
+		<String>Name</String>
+		<String>Aliases</String>
+		<String>Version</String>
+		<String>Description</String>
+		<String>InputDataSourceTypes</String>
+		<String>DataSourceFilter</String>
+		<String>SupportsOrthorectification</String>
+		<String>SupportsStereo</String>
+		<String>SupportsSeamline</String>
+		<String>EnableClipToFootprint</String>
+		<String>AllowSimplification</String>
+		<String>IsSensorRasterType</String>
+		<String>SupportsColorCorrection</String>
+		<String>FactoryCLSID</String>
+		<String>SupportedURIFilters</String>
+		<String>Parameters</String>
+		<String>FirstAddTimeStamp</String>
+		<String>FullName</String>
+		<String>AddRastersParameters</String>
+		<String>SynchronizeParameters</String>
+	</Names>
+	<Values xsi:type='typens:ArrayOfAnyType'>
+		<AnyType xsi:type='typens:TableBuilder'>
+			<Names xsi:type='typens:ArrayOfString'>
+				<String>AuxiliaryFields</String>
+				<String>AuxiliaryFieldAlias</String>
+				<String>RasterField</String>
+				<String>NameField</String>
+				<String>GroupField</String>
+				<String>TagField</String>
+				<String>ParentRasterTypeName</String>
+				<String>Properties</String>
+				<String>MergeItems</String>
+			</Names>
+			<Values xsi:type='typens:ArrayOfAnyType'>
+				<AnyType xsi:type='typens:Fields'>
+					<FieldArray xsi:type='typens:ArrayOfField'/>
+				</AnyType>
+				<AnyType xsi:type='typens:PropertySet'>
+					<PropertyArray xsi:type='typens:ArrayOfPropertySetProperty'/>
+				</AnyType>
+				<AnyType xsi:type='xs:string'>Raster</AnyType>
+				<AnyType xsi:type='xs:string'>ID</AnyType>
+				<AnyType xsi:type='xs:string'>ProductID</AnyType>
+				<AnyType xsi:type='xs:string'>Tag</AnyType>
+				<AnyType xsi:type='xs:string'>Table</AnyType>
+				<AnyType xsi:type='typens:PropertySet'>
+					<PropertyArray xsi:type='typens:ArrayOfPropertySetProperty'>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>BandProperties</Key>
+							<Value xsi:type='typens:ArrayOfArgument'/>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>DefaultBandCount</Key>
+							<Value xsi:type='xs:int'>0</Value>
+						</PropertySetProperty>
+						<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+							<Key>EditorDefaultNumBands</Key>
+							<Value xsi:type='xs:int'>3</Value>
+						</PropertySetProperty>
+					</PropertyArray>
+				</AnyType>
+				<AnyType xsi:type='xs:boolean'>false</AnyType>
+			</Values>
+		</AnyType>
+		<AnyType xsi:type='typens:ArrayOfItemTemplate' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.0'>
+			<ItemTemplate xsi:type='typens:ItemTemplate'>
+				<Name>Default</Name>
+				<Enabled>true</Enabled>
+				<IntersectFootprints>false</IntersectFootprints>
+				<OutputDatasetTag/>
+				<PrimaryInputDatasetTag/>
+				<FunctionTemplate xsi:type='typens:RasterFunctionTemplate'>
+					<Name>MS</Name>
+					<Description>A raster function template.</Description>
+					<Function xsi:type='typens:CompositeBandFunction'>
+						<Name>Composite Bands</Name>
+						<Description>Combines multiple datasets into one multiband raster.</Description>
+						<PixelType>UNKNOWN</PixelType>
+					</Function>
+					<Arguments xsi:type='typens:CompositeBandFunctionArguments'>
+						<Names xsi:type='typens:ArrayOfString'>
+							<String>Rasters</String>
+							<String>CellsizeType</String>
+						</Names>
+						<Values xsi:type='typens:ArrayOfAnyType'>
+							<AnyType xsi:type='typens:RasterFunctionVariable'>
+								<Name>Rasters_2017419_171057_ 44</Name>
+								<Description/>
+								<Value xsi:type='typens:ArrayOfArgument'>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B01</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B02</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B03</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B04</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B05</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B06</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B07</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B08</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B8A</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B09</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B11</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>B12</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>AOT</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>WVP</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+									<Argument xsi:type='typens:RasterFunctionVariable'>
+										<Name>SCL</Name>
+										<Description/>
+										<Value/>
+										<IsDataset>true</IsDataset>
+									</Argument>
+								</Value>
+								<Aliases xsi:type='typens:ArrayOfString'>
+									<String>__IsRasterArray__</String>
+								</Aliases>
+								<IsDataset>false</IsDataset>
+							</AnyType>
+							<AnyType xsi:type='typens:RasterFunctionVariable'>
+								<Name>CellsizeType</Name>
+								<Description/>
+								<Value xsi:type='xs:int'>1</Value>
+								<IsDataset>false</IsDataset>
+							</AnyType>
+						</Values>
+					</Arguments>
+					<Help/>
+					<Type>0</Type>
+					<Thumbnail xsi:type='xs:string'/>
+					<Definition/>
+					<Group/>
+					<Tag/>
+					<ThumbnailEx/>
+					<Properties xsi:type='typens:PropertySet'>
+						<PropertyArray xsi:type='typens:ArrayOfPropertySetProperty'>
+							<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+								<Key>MatchVariable</Key>
+								<Value xsi:type='typens:RasterFunctionVariable'>
+									<Name>MatchVariable</Name>
+									<Description/>
+									<Value xsi:type='xs:boolean'>true</Value>
+									<IsDataset>false</IsDataset>
+								</Value>
+							</PropertySetProperty>
+							<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+								<Key>UnionDimension</Key>
+								<Value xsi:type='typens:RasterFunctionVariable'>
+									<Name>UnionDimension</Name>
+									<Description/>
+									<Value xsi:type='xs:boolean'>false</Value>
+									<IsDataset>false</IsDataset>
+								</Value>
+							</PropertySetProperty>
+						</PropertyArray>
+					</Properties>
+				</FunctionTemplate>
+				<SupportsEnhancement>false</SupportsEnhancement>
+				<IsEnhancementEnabled>true</IsEnhancementEnabled>
+				<IntersectFootprints>false</IntersectFootprints>
+				<AncillaryDatasets xsi:nil='true'/>
+				<AncillaryFunctionTemplateNames xsi:nil='true'/>
+				<PrimaryChainConnectorVariables xsi:nil='true'/>
+			</ItemTemplate>
+		</AnyType>
+		<AnyType xsi:type='xs:string'>Composite</AnyType>
+		<AnyType xsi:type='typens:ArrayOfString'/>
+		<AnyType xsi:type='xs:int'>1</AnyType>
+		<AnyType xsi:type='xs:string'>Supports all tables</AnyType>
+		<AnyType xsi:type='xs:int'>176</AnyType>
+		<AnyType xsi:type='xs:string'/>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>true</AnyType>
+		<AnyType xsi:type='xs:boolean'>true</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>false</AnyType>
+		<AnyType xsi:type='xs:boolean'>true</AnyType>
+		<AnyType xsi:type='typens:UID'>
+			<UID xsi:type='xs:string'>{8F2800F4-5842-47DF-AD1D-2077A7966BBF}</UID>
+		</AnyType>
+		<AnyType xsi:type='typens:ArrayOfArgument'/>
+		<AnyType xsi:type='typens:PropertySet'>
+			<PropertyArray xsi:type='typens:ArrayOfPropertySetProperty'/>
+		</AnyType>
+		<AnyType xsi:type='xs:double'>44081.233471203705</AnyType>
+		<AnyType xsi:type='typens:RasterTypeName'>
+			<Name>Composite</Name>
+			<InstanceID>7</InstanceID>
+			<MosaicDatasetName xsi:type='typens:MosaicDatasetName'>
+				<WorkspaceName xsi:type='typens:WorkspaceName'>
+					<PathName>C:\ddrive\Vijay\Projects\Sentinel2A_Azure\51.145.246.237\Master.gdb</PathName>
+					<BrowseName>Master</BrowseName>
+					<WorkspaceFactoryProgID>esriDataSourcesGDB.FileGDBWorkspaceFactory</WorkspaceFactoryProgID>
+					<WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+					<ConnectionProperties xsi:type='typens:PropertySet'>
+						<PropertyArray xsi:type='typens:ArrayOfPropertySetProperty'>
+							<PropertySetProperty xsi:type='typens:PropertySetProperty'>
+								<Key>DATABASE</Key>
+								<Value xsi:type='xs:string'>C:\ddrive\Vijay\Projects\Sentinel2A_Azure\51.145.246.237\Master.gdb</Value>
+							</PropertySetProperty>
+						</PropertyArray>
+					</ConnectionProperties>
+				</WorkspaceName>
+				<Name>Master</Name>
+				<NameString/>
+				<Category>Mosaic Dataset</Category>
+			</MosaicDatasetName>
+		</AnyType>
+		<AnyType xsi:nil='true'/>
+		<AnyType xsi:nil='true'/>
+	</Values>
+</RasterType>
